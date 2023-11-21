@@ -320,17 +320,35 @@ tr td:first-child:not(:empty):after {
     content: ":";
 }
 
+#income_statement td:first-child:not(:empty):after, #expenses_statement td:first-child:not(:empty):after {
+    content: none;
+}
+
 tr.noAfter td:first-child:after {
     content: none;
 }
 
-#income_statement td:first-child, #expenses_statement td:first-child{
-    width: 50%;
+#income_statement td:first-child, #expenses_statement td:first-child {
+    width: 20%;
+    text-align: center;
 }
-#income_statement td:last-child, #expenses_statement td:last-child{
+
+#income_statement td:nth-of-type(2), #expenses_statement td:nth-of-type(2) {
+    width: 40%;
+    text-align: center;
+}
+
+#income_statement td:last-child, #expenses_statement td:last-child {
+    width: 20%;
     text-align: right;
     position: relative;
-    right: 22%;
+    right: 8%;
+}
+
+#income_statement td:last-child, #expenses_statement td:last-child {
+    /*text-align: right;*/
+    /*position: relative;*/
+    /*right: 22%;*/
 }
 
 
